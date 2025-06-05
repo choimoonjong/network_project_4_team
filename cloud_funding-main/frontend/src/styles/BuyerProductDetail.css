@@ -1,0 +1,220 @@
+  /* BuyerProductDetail.css */
+  .product-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  .product-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .product-detail-header h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .product-detail-header button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .product-detail-header button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .product-detail-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .product-detail-image {
+    flex: 0 0 50%;
+  }
+  
+  .product-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-detail-info {
+    flex: 1;
+  }
+  
+  .product-detail-info h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .product-description {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .product-stats {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  
+  .stat-item {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-label {
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .stat-value {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .investment-form {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .investment-form h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .message {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+  }
+  
+  .message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .input-group button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .input-group button:hover {
+    background-color: #45a049;
+  }
+  
+  .investment-note {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  .investment-closed {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .error-message {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .error-message h2 {
+    color: #e53935;
+    margin-bottom: 20px;
+  }
+  
+  .product-detail-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #888;
+  }
+  
+  /* BuyerProductDetail.css에 추가 */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.balance-section {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.balance-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.balance-button:hover {
+  background-color: #2563eb;
+}
+
+.balance-display {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #333;
+  background-color: #f0f9ff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #bae6fd;
+}

@@ -1,0 +1,228 @@
+/* BuyerMainPage.css */
+.buyer-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  .buyer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .buyer-header h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .buyer-header button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .buyer-header button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .my-investments-section {
+    margin-bottom: 40px;
+  }
+  
+  .my-investments-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .my-investments-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 20px;
+  }
+  
+  .investment-card {
+    flex: 0 0 auto;
+    width: 280px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .investment-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .investment-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .investment-card h3 {
+    padding: 15px 15px 5px;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .investment-card p {
+    padding: 0 15px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .view-detail-button {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    padding: 8px 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .view-detail-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .no-investments {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .available-products-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 30px 0 20px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    padding: 15px 15px 5px;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .product-description {
+    padding: 0 15px;
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.5;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+  }
+  
+  .product-details {
+    padding: 0 15px;
+  }
+  
+  .product-details p {
+    margin: 8px 0;
+    color: #666;
+  }
+  
+  .invest-button {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .invest-button:hover {
+    background-color: #45a049;
+  }
+  
+  .buyer-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #888;
+  }
+
+  /* BuyerMainPage.css에 추가 */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.balance-section {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.balance-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.balance-button:hover {
+  background-color: #2563eb;
+}
+
+.balance-display {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #333;
+  background-color: #f0f9ff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #bae6fd;
+}

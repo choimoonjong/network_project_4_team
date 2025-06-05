@@ -1,0 +1,255 @@
+  /* SellerMainPage.css */
+  .seller-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  .seller-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .seller-header h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .register-product-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .register-product-button:hover {
+    background-color: #45a049;
+  }
+  
+  .logout-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .logout-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .seller-content {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .product-list-section {
+    flex: 0 0 60%;
+  }
+  
+  .investor-details-section {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .product-list-section h2,
+  .investor-details-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .product-item {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #fff;
+  }
+  
+  .product-item:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item.selected {
+    border-color: #4caf50;
+    background-color: #f1f8e9;
+  }
+  
+  .product-image {
+    flex: 0 0 120px;
+  }
+  
+  .product-image img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .product-stats {
+    margin-top: 10px;
+  }
+  
+  .product-stats p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .target-status {
+    font-weight: 500;
+  }
+  
+  .target-status.achieved {
+    color: #4caf50;
+  }
+  
+  .no-products {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .product-summary {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .product-summary p {
+    margin: 8px 0;
+    color: #666;
+  }
+  
+  .investors-list h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .investors-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .investors-table th,
+  .investors-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .investors-table th {
+    background-color: #f0f0f0;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .investors-table tfoot td {
+    font-weight: 500;
+    background-color: #f9f9f9;
+  }
+  
+  .no-investors {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .seller-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #888;
+  }
+  
+  /* SellerMainPage.css에 추가 */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.balance-section {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.balance-button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.balance-button:hover {
+  background-color: #059669;
+}
+
+.balance-display {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #333;
+  background-color: #ecfdf5;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #a7f3d0;
+}
